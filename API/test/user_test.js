@@ -111,3 +111,13 @@ describe('Update user', () => {
         expect(response.status).to.equal(200)
     })
 })
+
+
+describe('Delete user', () => {
+    it(`${scenario.positive.deleteUser}`, async () => {
+        console.log(id)
+        const response = await page.deleteUser(id)
+        // console.log(payloadUpdate)
+        expect(response.status).to.equal(200)
+    })
+})
