@@ -82,3 +82,13 @@ describe('Create user', () => {
     })
 
 })
+
+describe('Get all users', () => {
+    it(`${scenario.positive.getAllUser}`, async () => {
+        // console.log(payload)
+        const response = await page.getAllUser(name)
+        // console.log(response.body.data[0].id)
+
+        expect(response.status).to.equal(200)
+    })
+})
