@@ -101,3 +101,13 @@ describe('Get detail user', () => {
         expect(response.status).to.equal(200)
     })
 })
+
+describe('Update user', () => {
+    it(`${scenario.positive.updateUser}`, async () => {
+        // console.log(payload)
+        payloadUpdate.firstName = payload.firstName + ' Diubah'
+        const response = await page.updateUser(payloadUpdate)
+        // console.log(payloadUpdate)
+        expect(response.status).to.equal(200)
+    })
+})

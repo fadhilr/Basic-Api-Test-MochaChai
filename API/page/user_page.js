@@ -21,6 +21,11 @@ const getDetailUser = (id) => api.get(path + '/' + id)
     .set('Content-Type', 'application/json')
     .set('Accept', 'application/json')
 
+const updateUser = (payloadUpdate) => api.put(path)
+    .send(payloadUpdate)
+    .set('Content-Type', 'application/json')
+    .set('Accept', 'application/json')
+
 module.exports = {
     createUser,
     getAllUser,
