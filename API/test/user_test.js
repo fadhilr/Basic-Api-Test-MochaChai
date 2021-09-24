@@ -92,3 +92,12 @@ describe('Get all users', () => {
         expect(response.status).to.equal(200)
     })
 })
+
+describe('Get detail user', () => {
+    it(`${scenario.positive.getDetailUser}`, async () => {
+        // console.log(payload)
+        const response = await page.getDetailUser(id)
+        console.log(id)
+        expect(response.status).to.equal(200)
+    })
+})
