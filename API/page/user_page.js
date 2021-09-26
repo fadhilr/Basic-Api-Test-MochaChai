@@ -13,7 +13,12 @@ const createUser = (payload) => api.post(path)
     .set('Content-Type', 'application/json')
     .set('Accept', 'application/json')
 
-const getAllUser = (payload) => api.get(path + queryParam + payload)
+// const getAllUser = (payload) => api.get(path + queryParam + payload)
+//     .set('Content-Type', 'application/json')
+//     .set('Accept', 'application/json')
+
+const getAllUser = (query) => api.get(path)
+    .query(query)
     .set('Content-Type', 'application/json')
     .set('Accept', 'application/json')
 
