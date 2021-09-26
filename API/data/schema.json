@@ -1,0 +1,150 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1632632733.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"data",
+		"status"
+	],
+	"properties": {
+		"data": {
+			"$id": "#root/data", 
+			"title": "Data", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/data/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"id",
+					"firstName",
+					"lastName",
+					"age",
+					"occupation",
+					"nationality",
+					"hobbies",
+					"gender",
+					"createdDate",
+					"updatedDate"
+				],
+				"properties": {
+					"id": {
+						"$id": "#root/data/items/id", 
+						"title": "Id", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"c9364da1-77b9-4838-8e54-83bb93b66f08"
+						],
+						"pattern": "^.*$"
+					},
+					"firstName": {
+						"$id": "#root/data/items/firstName", 
+						"title": "Firstname", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"Fadhil"
+						],
+						"pattern": "^.*$"
+					},
+					"lastName": {
+						"$id": "#root/data/items/lastName", 
+						"title": "Lastname", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"Rizqullah"
+						],
+						"pattern": "^.*$"
+					},
+					"age": {
+						"$id": "#root/data/items/age", 
+						"title": "Age", 
+						"type": "integer",
+						"examples": [
+							24
+						],
+						"default": 0
+					},
+					"occupation": {
+						"$id": "#root/data/items/occupation", 
+						"title": "Occupation", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"Karyawan"
+						],
+						"pattern": "^.*$"
+					},
+					"nationality": {
+						"$id": "#root/data/items/nationality", 
+						"title": "Nationality", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"Indonesia"
+						],
+						"pattern": "^.*$"
+					},
+					"hobbies": {
+						"$id": "#root/data/items/hobbies", 
+						"title": "Hobbies", 
+						"type": "array",
+						"default": [],
+						"items":{
+							"$id": "#root/data/items/hobbies/items", 
+							"title": "Items", 
+							"type": "string",
+							"default": "",
+							"examples": [
+								"Array"
+							],
+							"pattern": "^.*$"
+						}
+					},
+					"gender": {
+						"$id": "#root/data/items/gender", 
+						"title": "Gender", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"MALE"
+						],
+						"pattern": "^.*$"
+					},
+					"createdDate": {
+						"$id": "#root/data/items/createdDate", 
+						"title": "Createddate", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"2021-09-24T16:37:48.083"
+						],
+						"pattern": "^.*$"
+					},
+					"updatedDate": {
+						"$id": "#root/data/items/updatedDate", 
+						"title": "Updateddate", 
+						"type": ["string", "null"],
+						"default": null
+					}
+				}
+			}
+
+		},
+		"status": {
+			"$id": "#root/status", 
+			"title": "Status", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"success"
+			],
+			"pattern": "^.*$"
+		}
+	}
+}
